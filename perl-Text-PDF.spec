@@ -27,7 +27,7 @@ Text-PDF umo¿liwia operowanie na plikach PDF.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
