@@ -2,7 +2,7 @@
 Summary:	Text-PDF perl module
 Summary(pl):	Modu³ perla Text-PDF
 Name:		perl-Text-PDF
-Version:	0.16
+Version:	0.18
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -11,7 +11,7 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-PDF-%{version}.tar.gz
 Patch0:		%{name}-fix.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Font-TTF
 BuildArch:	noarch
