@@ -13,6 +13,7 @@ Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	5de145ed6109d472b523c08ddd9f3583
 Patch0:		%{name}-fix.patch
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Compress-Zlib
