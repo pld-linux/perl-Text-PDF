@@ -1,0 +1,7 @@
+--- Text-PDF-0.13/lib/Text/PDF/File.pm~	Fri Mar 23 09:21:04 2001
++++ Text-PDF-0.13/lib/Text/PDF/File.pm	Wed Apr 18 03:41:52 2001
+@@ -960,3 +960,4 @@
+ 
+ This Perl Text::PDF module is licensed under the Perl Artistic License.
+ 
++=cut
