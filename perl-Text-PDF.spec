@@ -2,7 +2,7 @@
 Summary:	Text-PDF perl module
 Summary(pl):	Modu³ perla Text-PDF
 Name:		perl-Text-PDF
-Version:	0.15
+Version:	0.16
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
