@@ -4,8 +4,8 @@
 Summary:	Text::PDF perl module
 Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
-Version:	0.18
-Release:	3
+Version:	0.20
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -44,5 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
+%attr(755,root,root) %{_bindir}/*
 %{perl_sitelib}/Text/PDF
 %{_mandir}/man3/*
