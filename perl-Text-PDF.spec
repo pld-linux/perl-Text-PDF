@@ -14,7 +14,7 @@ BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Font-TTF
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Text-PDF - PDF manipulation module.
