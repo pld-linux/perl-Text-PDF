@@ -1,11 +1,15 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	PDF
+%define		pdir	Text
+%define		pnam	PDF
 Summary:	Text::PDF perl module
 Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
 Version:	0.23
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -30,6 +34,7 @@ Text::PDF umo¿liwia operowanie na plikach PDF.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -41,7 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *txt
+%doc *txt lib/Text/PDF/changes
 %attr(755,root,root) %{_bindir}/*
-%{perl_sitelib}/Text/PDF
+%dir %{perl_sitelib}/Text/PDF
+%{perl_sitelib}/Text/PDF/*.pm
 %{_mandir}/man3/*
