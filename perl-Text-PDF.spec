@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text-PDF perl module
 Summary(pl):	Modu³ perla Text-PDF
 Name:		perl-Text-PDF
@@ -8,13 +8,13 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-PDF-%{version}.tar.gz
-Patch:		perl-Text-PDF-makefile.patch
-BuildRequires:	perl >= 5.005_03-10
+Patch:		perl-Text-PDF-case.patch
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Compress-Zlib
+BuildRequires:	perl-Font-TTF
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-Compress-Zlib
-Requires:	perl-Font-TTF
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -28,6 +28,7 @@ Text-PDF umo¿liwia operowanie na plikach PDF.
 %patch -p0
 
 %build
+(cd lib/Text/PDF; mv FILE.PM File.pm)
 perl Makefile.PL
 make
 
