@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Text
-%define		pnam	PDF
+%define	pdir	Text
+%define	pnam	PDF
 Summary:	Text::PDF perl module
 Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
