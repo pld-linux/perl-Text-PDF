@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	PDF
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text-PDF perl module
 Summary(pl):	Modu³ perla Text-PDF
 Name:		perl-Text-PDF
 Version:	0.18
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ Text-PDF - PDF manipulation module.
 Text-PDF umo¿liwia operowanie na plikach PDF.
 
 %prep
-%setup -q -n Text-PDF-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p1
 
 %build
