@@ -8,12 +8,12 @@
 Summary:	Text::PDF perl module
 Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
-Version:	0.23
-Release:	3
+Version:	0.25
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5de145ed6109d472b523c08ddd9f3583
+# Source0-md5:	8b120662c4c59154967908159156a83e
 Patch0:		%{name}-fix.patch
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Compress-Zlib
