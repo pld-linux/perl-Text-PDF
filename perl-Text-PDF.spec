@@ -9,6 +9,7 @@ Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-PDF-%{version}.tar.gz
+Patch0:		%{name}-fix.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Compress-Zlib
@@ -23,6 +24,7 @@ Text-PDF umo¿liwia operowanie na plikach PDF.
 
 %prep
 %setup -q -n Text-PDF-%{version}
+%patch0 -p1
 
 %build
 perl Makefile.PL
