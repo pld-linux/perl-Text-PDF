@@ -10,7 +10,8 @@ Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
 Version:	0.25
 Release:	1
-License:	GPL
+# one module mentions License=Artistic
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8b120662c4c59154967908159156a83e
