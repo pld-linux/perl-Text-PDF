@@ -2,10 +2,11 @@
 Summary:	Text-PDF perl module
 Summary(pl):	Modu³ perla Text-PDF
 Name:		perl-Text-PDF
-Version:	0.07
+Version:	0.12
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-PDF-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -36,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Text/PDF
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
