@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	PDF
-Summary:	Text-PDF perl module
-Summary(pl):	Modu³ perla Text-PDF
+Summary:	Text::PDF perl module
+Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
 Version:	0.18
 Release:	3
@@ -18,10 +18,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-PDF - PDF manipulation module.
+Text::PDF - PDF manipulation module.
 
 %description -l pl
-Text-PDF umo¿liwia operowanie na plikach PDF.
+Text::PDF umo¿liwia operowanie na plikach PDF.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
