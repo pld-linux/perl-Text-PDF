@@ -1,6 +1,7 @@
---- Text-PDF-0.13/lib/Text/PDF/File.pm~	Fri Mar 23 09:21:04 2001
-+++ Text-PDF-0.13/lib/Text/PDF/File.pm	Wed Apr 18 03:41:52 2001
-@@ -960,3 +960,4 @@
+diff -uNr Text-PDF-0.23.orig/lib/Text/PDF/File.pm Text-PDF-0.23/lib/Text/PDF/File.pm
+--- Text-PDF-0.23.orig/lib/Text/PDF/File.pm	Mon Sep 16 13:23:40 2002
++++ Text-PDF-0.23/lib/Text/PDF/File.pm	Mon Sep 16 13:22:27 2002
+@@ -1226,3 +1226,4 @@
  
  This Perl Text::PDF module is licensed under the Perl Artistic License.
  
