@@ -8,13 +8,14 @@
 Summary:	Text::PDF perl module
 Summary(pl):	Modu³ perla Text::PDF
 Name:		perl-Text-PDF
-Version:	0.25
+%define		base_version	0.29
+Version:	%{base_version}a
 Release:	1
 # one module mentions License=Artistic
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8b120662c4c59154967908159156a83e
+# Source0-md5:	2fdf4c3170e53a083715888237914a9b
 Patch0:		%{name}-fix.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Compress-Zlib
@@ -30,7 +31,7 @@ Text::PDF - PDF manipulation module.
 Text::PDF umo¿liwia operowanie na plikach PDF.
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{base_version}
 %patch0 -p1
 
 %build
@@ -53,6 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *txt lib/Text/PDF/changes
 %attr(755,root,root) %{_bindir}/*
+%{perl_vendorlib}/Text/PDF.pm
 %dir %{perl_vendorlib}/Text/PDF
 %{perl_vendorlib}/Text/PDF/*.pm
 %{_mandir}/man3/*
