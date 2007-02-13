@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	PDF
 Summary:	Text::PDF perl module
-Summary(pl.UTF-8):   Moduł perla Text::PDF
+Summary(pl.UTF-8):	Moduł perla Text::PDF
 Name:		perl-Text-PDF
 %define		base_version	0.29
 Version:	%{base_version}a
