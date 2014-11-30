@@ -1,14 +1,14 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Text
 %define		pnam	PDF
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text::PDF perl module
 Summary(pl.UTF-8):	Moduł perla Text::PDF
-Name:		perl-Text-PDF
 %define		base_version	0.29
+Name:		perl-Text-PDF
 Version:	%{base_version}a
 Release:	1
 # one module mentions License=Artistic
@@ -17,9 +17,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2fdf4c3170e53a083715888237914a9b
 Patch0:		%{name}-fix.patch
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Text-PDF/
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Font-TTF
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
