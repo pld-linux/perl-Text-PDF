@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	PDF
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::PDF perl module
 Summary(pl.UTF-8):	Moduł perla Text::PDF
 %define		base_version	0.29
