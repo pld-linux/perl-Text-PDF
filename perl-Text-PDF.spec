@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Moduł perla Text::PDF
 %define		base_version	0.29
 Name:		perl-Text-PDF
 Version:	%{base_version}a
-Release:	1
+Release:	2
 # one module mentions License=Artistic
 License:	Artistic
 Group:		Development/Languages/Perl
